@@ -4,7 +4,7 @@
 }
 
 .section-row h2 {
-  color: white;
+  color: rgb(13, 159, 203); /* as per your request */
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 20px;
@@ -24,8 +24,8 @@
 
 .row-card {
   flex: 0 0 auto;
-  width: 350px;             
-  height: 200px;            
+  width: 350px;
+  height: 200px;
   border-radius: 12px;
   background-size: cover;
   background-position: center;
@@ -51,4 +51,32 @@
   padding: 6px 10px;
   border-radius: 6px;
   text-align: center;
+}
+
+/* === Responsive Styles === */
+@media (max-width: 768px) {
+  .section-row {
+    padding: 0 15px;
+  }
+
+  .section-row h2 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .row-scroll {
+    flex-direction: column;
+    overflow-x: hidden;
+  }
+
+  .row-card {
+    width: 100%;
+    height: auto;
+    min-height: 180px;
+  }
+
+  .card-title {
+    font-size: 14px;
+    padding: 5px 8px;
+  }
 }

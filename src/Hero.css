@@ -1,5 +1,5 @@
 .hero-container {
-  height: 60vh; /* ✅ Reduce from full screen */
+  height: 60vh;
   width: 100vw;
   background-size: cover;
   background-position: center;
@@ -11,7 +11,6 @@
   padding: 40px;
 }
 
-
 .hero-overlay {
   background-color: rgba(0, 0, 0, 0.6);
   padding: 40px;
@@ -20,7 +19,6 @@
   color: white;
   max-width: 800px;
 }
-
 
 .hero-title {
   font-size: 32px;
@@ -39,6 +37,7 @@
   display: flex;
   justify-content: center;
   gap: 15px;
+  flex-wrap: wrap;
 }
 
 .hero-btn {
@@ -52,4 +51,36 @@
 
 .hero-btn.secondary {
   background-color: #333;
+}
+
+/* === Responsive Styles === */
+@media (max-width: 768px) {
+  .hero-container {
+    height: auto;
+    padding: 20px;
+  }
+
+  .hero-overlay {
+    padding: 20px;
+    margin: 20px 0;
+  }
+
+  .hero-title {
+    font-size: 24px;
+  }
+
+  .hero-desc {
+    font-size: 14px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero-btn {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+  }
 }

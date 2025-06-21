@@ -17,7 +17,7 @@
 }
 
 .profile-pic {
-  width: 140px;              
+  width: 140px;
   height: 140px;
   border-radius: 50%;
   object-fit: cover;
@@ -95,4 +95,42 @@
   margin-top: 30px;
   color: #ccc;
   font-style: italic;
+}
+
+/* === Responsive Styles === */
+@media (max-width: 768px) {
+  .contact-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .contact-text {
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .profile-pic {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 15px;
+  }
+
+  .contact-text h3 {
+    font-size: 20px;
+  }
+
+  .desc {
+    font-size: 13px;
+  }
+
+  .profile-btn {
+    font-size: 13px;
+    padding: 7px 12px;
+  }
+
+  .info-box {
+    font-size: 14px;
+    padding: 10px 16px;
+  }
 }

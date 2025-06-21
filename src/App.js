@@ -92,12 +92,12 @@ function PortfolioScreen() {
       <SectionRow
         title="Today's Top Picks for Recruiter"
         items={topPicks}
-        onCardClick={(card) => setSelectedCard(card.title)} // ✅ FIXED HERE
+        onCardClick={(card) => setSelectedCard(card.title)} 
       />
       <SectionRow
         title="Continue Watching for Recruiter"
         items={continueWatching}
-        onCardClick={(card) => setSelectedCard(card.title)} // ✅ FIXED HERE
+        onCardClick={(card) => setSelectedCard(card.title)} 
       />
 
       {/* Modal opens based on card title */}
