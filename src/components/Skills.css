@@ -1,0 +1,32 @@
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.skills-section h3 {
+  color: rgb(17, 177, 192);
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.skills-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill-tag {
+  background-color: #222;
+  border: 1px solid #444;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: background 0.3s;
+}
+
+.skill-tag:hover {
+  background-color: rgb(30, 210, 216);
+  color: black;
+}

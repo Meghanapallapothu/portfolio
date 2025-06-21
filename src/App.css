@@ -1,38 +1,187 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+/* === Global === */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #000;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.app {
+  padding: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* === Netflix Title Style (Splash & Header) === */
+.netflix-title {
+  font-size: 68px;
+  color: #e50914;
+  font-weight: 900;
+  text-align: center;
+  margin: 40px 0;
+  letter-spacing: 2px;
+  font-family: 'Arial Black', sans-serif;
+  text-transform: uppercase;
+  transform: perspective(600px) rotateX(25deg);
+  animation: archText 1s ease-in-out forwards;
+}
+
+.netflix-title.small {
+  font-size: 28px;
+  transform: none;
+  animation: none;
+}
+
+@keyframes archText {
+  0% {
+    opacity: 0;
+    transform: perspective(600px) rotateX(80deg);
   }
-  to {
-    transform: rotate(360deg);
+  100% {
+    opacity: 1;
+    transform: perspective(600px) rotateX(25deg);
   }
 }
+
+/* === Splash Screen === */
+.splash {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+}
+
+/* === Profile Selection Screen === */
+.profile-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* take full height */
+  text-align: center;
+}
+
+.profile-screen h2 {
+  font-size: 56px;
+  margin-bottom: 40px;
+  color: red;
+}
+
+
+.profile-grid {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.profile-box {
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.profile-box:hover {
+  transform: scale(1.1);
+}
+
+.profile-box img {
+  width: 120px;
+  height: 120px;
+  border-radius: 10px;
+}
+
+.profile-box p {
+  margin-top: 10px;
+  font-size: 16px;
+  color: white;
+}
+
+/* === Header Navigation === */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid red;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+}
+
+.links a {
+  margin-left: 15px;
+  color: white;
+  text-decoration: none;
+  border: 1px solid red;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.links a:hover {
+  background-color: red;
+  color: black;
+}
+
+/* === Projects Section === */
+h2 {
+  color: red;
+  margin-bottom: 15px;
+}
+
+.project-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
+.card {
+  background: #111;
+  border-radius: 10px;
+  padding: 20px;
+  border: 1px solid #333;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+.card h3 {
+  color: red;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 14px;
+  color: #ccc;
+}
+
+.tags {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.tag {
+  display: inline-block;
+  background: #222;
+  color: #aaa;
+  padding: 4px 8px;
+  margin: 2px;
+  font-size: 12px;
+  border-radius: 4px;
+}
+
+.btn {
+  text-decoration: none;
+  display: inline-block;
+  background: red;
+  color: black;
+  padding: 6px 12px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.back-btn {
+  display: none;
+}
+
+
+

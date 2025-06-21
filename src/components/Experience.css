@@ -1,0 +1,74 @@
+.experience-container {
+  padding: 40px 20px;
+  position: relative;
+  color: white;
+}
+
+.experience-title {
+  text-align: center;
+  font-size: 24px;
+  color: rgb(17, 159, 202);
+  margin-bottom: 30px;
+}
+
+.experience-container::before {
+  content: "";
+  position: absolute;
+  left: 20px;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background-color: rgb(14, 163, 204);
+}
+
+.experience-item {
+  position: relative;
+  padding-left: 50px;
+  margin-bottom: 30px;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease;
+}
+
+.experience-item.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.experience-dot {
+  position: absolute;
+  left: 14px;
+  top: 6px;
+  width: 16px;
+  height: 16px;
+  background-color: rgb(18, 208, 225);
+  border-radius: 50%;
+  border: 2px solid black;
+}
+
+.experience-content {
+  background-color: #111;
+  padding: 15px 20px;
+  border-left: 4px solid rgb(13, 194, 210);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.3);
+}
+
+.experience-content h3 {
+  margin: 0 0 5px 0;
+  font-size: 18px;
+  color: rgb(7, 170, 191);
+}
+
+.experience-period {
+  font-size: 13px;
+  color: #bbb;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.experience-content p {
+  font-size: 14px;
+  color: #ddd;
+  margin: 0;
+}
