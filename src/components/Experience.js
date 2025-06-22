@@ -32,7 +32,7 @@ export default function Experience() {
       title: "Hackathon Organizer & Tech Lead",
       period: "2025",
       description:
-        "Led technical development for college hackathons, built platforms with live updates and interactive rooms using Django and React.",
+        "Led technical development for college hackathons,• Technical Lead,Oversaw problem statement design, team mentorship, and event execution at VRSEC.",
     },
   ];
 
